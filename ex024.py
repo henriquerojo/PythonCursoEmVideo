@@ -1,0 +1,8 @@
+print('===EXERCÍCIO 024===')
+nome = str(input('Digite seu nome completo: ')).strip().title()
+dividido = nome.split()
+print('Analisando seu nome...')
+print(f'Seu nome em maiúsculas é: \033[1m{nome.upper()}\033[m.')
+print(f'Seu nome em minúsculas é: \033[1m{nome.lower()}\033[m.')
+print(f'Seu nome ao todo tem \033[1m{len(nome) - nome.count(" ")}\033[m letras.')
+print(f'Seu primeiro nome é \033[1m{dividido[0]}\033[m e ele tem \033[1m{len(dividido[0])}\033[m letras.')

@@ -1,0 +1,5 @@
+print('===EXERCÍCIO 028===')
+frase = str(input('Digite uma frase: ')).strip().lower()
+print(f'Na sua frase a letra "a" ou "A" aparece \033[31m{frase.count("a")}\033[m vezes.')
+print(f'A primeira letra "a" ou "A" apareceu na posição \033[31m{frase.find("a")+1}\033[m')
+print(f'A última letra "a" ou "A" apareceu na posição \033[31m{frase.rfind("a")+ 1}\033[m')

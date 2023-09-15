@@ -1,0 +1,16 @@
+print('===EXERCÍCIO 029===')
+"""nome = str(input('Digite seu nome completo: ')).strip().title()
+lista1 = nome.split()
+lista2 = nome.rsplit(' ', -1)
+print('Olá é um prazer te conhecer!')
+print(f'Seu primeiro nome é: {lista1[0]}')
+print(f'Seu último nome é: {lista2[-1:]}')"""
+"""nome = str(input('Digite seu nome completo: ')).strip().title()
+n = nome.split()
+print('Olá é um prazer te conhecer!')
+print('Analisando seu nome...')
+print(f'Seu primeiro nome é {n[0]}')
+print(f'Seu último nome é {n[len(n)-1]}')"""
+n = str(input('Digite seu nome completo: ')).strip().title()
+u = n.split()
+print(f'Seu primeiro nome é \033[36m{u[0]}\033[m e seu último nome é \033[36m{u[-1]}\033[m')
