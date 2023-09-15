@@ -13,6 +13,6 @@ while True:
 
     print()  # Nova linha
 
-    continuar = input("Deseja continuar gerando a sequência? (S/N): ")
+    continuar = input("Deseja continuar gerando a sequência?  (S/N): ")
     if continuar.upper() != 'S':
         break
