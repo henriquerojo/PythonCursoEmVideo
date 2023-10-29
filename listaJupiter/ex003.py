@@ -5,9 +5,9 @@
 # (Use random.randint() para gerar o número aleatório)
 import random
 contador = 1
-numero = random.randint(1, 100)
+numero = random.randint(1, 10) # 90
 while True:
-    usuario = int(input('Digite um número inteiro entre 1 e 100: '))
+    usuario = int(input('Digite um número inteiro entre 1 e 10: '))
     if usuario > numero:
         print('O número que você digitou é maior que o número sorteado, tente digitar um número menor')
     elif usuario < numero:

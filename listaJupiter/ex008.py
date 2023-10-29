@@ -6,13 +6,13 @@ meses=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez']
 
 acumulador = 0
 tamanho = len(receitas)
-mesesLucroMaior = []
+mesesLucroMenor = []
 contador = 1
 
 for c in range(0, tamanho):
     lucro = receitas[c] - despesas[c]
-    acumulador += lucro
-media = acumulador / 12
+    acumulador = acumulador + lucro
+media = acumulador / tamanho
 
 #definindo 50% de media
 percentual = (media * 50) / 100
@@ -20,5 +20,5 @@ percentual = (media * 50) / 100
 for c in range(0, tamanho):
     lucro = receitas[c] - despesas[c]
     if lucro < (media - percentual):
-        mesesLucroMaior.append(meses[c])
-print(mesesLucroMaior)
+        mesesLucroMenor.append(meses[c])
+print(mesesLucroMenor)

@@ -5,9 +5,11 @@ meses=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez']
 tamanho = len(receitas)
 Lucromaior = 0
 mesMaior = ''
-for c in range(0, tamanho):
+
+for c in range(0, tamanho): # 7
     lucro = receitas[c] - despesas[c]
     if lucro > Lucromaior:
         Lucromaior = lucro
         mesMaior = meses[c]
+
 print(f'O maior lucro foi de {Lucromaior} no mês de {mesMaior}')

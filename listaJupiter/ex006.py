@@ -4,8 +4,10 @@ despesas = [12051.82, 5695.07, 12319.20, 12089.72, 8658.57, 840.20, 3285.73, 582
 meses=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez']
 acumulador = 0
 tamanho = len(receitas)
+
 for c in range(0, tamanho):
     lucro = receitas[c] - despesas[c]
-    acumulador += lucro
-media = acumulador / 12
+    acumulador = acumulador + lucro
+
+media = acumulador / tamanho
 print(f'A média mensal de lucro é de {round(media,2)}')
